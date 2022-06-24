@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    #root{
+      width: 100vw;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .slidebox{
+      width: 50vw;
+      height: 50vh;
+      border: 1px solid black;
+      overflow: hidden;
+      position: relative;
+    }
+
+    .slideimgbox{
+      width: 200vw;
+      height: 50vh;
+      display: flex;
+      position:absolute;
+    }
+
+    .slideimgbox>li{
+      width: 50vw;
+      height: 50vh;
+      list-style-type: none;
+    }
+
+    .slideimgbox>li>img{
+      width: 50vw;
+      height: 50vh;
+    }
+
+    .arrowleft{
+      width: 5vw;
+      height: 5vw;
+      font-size: 2rem;
+      border: 1px solid black;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+    }
+    .arrowright{
+      width: 5vw;
+      height: 5vw;
+      font-size: 2rem;
+      border: 1px solid black;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <div id="root">
+    <div class="arrowleft"><</div>
+    <div class="slidebox">
+      <div class="slideimgbox">
+        <li><img src="./image/아가.png" alt=""></li>
+        <li><img src="./image/응대.png" alt=""></li>
+        <li><img src="./image/졸업.png" alt=""></li>
+        <li><img src="./image/한예슬.png" alt=""></li>
+      </div>
+    </div>
+    <div class="arrowright">></div>
+  </div>
+  <script defer src="./practice.js"></script>
+</body>
+</html>
